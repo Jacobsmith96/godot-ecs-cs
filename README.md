@@ -26,7 +26,7 @@ The term `Executor` was chosen in place of `System` due to it's reserved status 
 
 - Install Godot with C# support (.Net option) from the [Official Website](https://godotengine.org/download/windows/). This project is built on Godot version 4.2.1.
 
-### Clone the project
+### Cloning the project
 
 - Run the following command in the location of your choice.
 
