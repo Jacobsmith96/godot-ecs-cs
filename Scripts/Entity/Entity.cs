@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Godot;
 
-public partial class Entity : Node3D
+public partial class Entity : Node
 {
     public int ID { get; set; }
     protected Dictionary<System.Type, Component> Components;

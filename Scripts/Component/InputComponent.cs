@@ -6,4 +6,5 @@ public partial class InputComponent : Component
     public bool IsRightPressed;
     public bool IsUpPressed;
     public bool IsDownPressed;
+    public bool IsJumpPressed;
 }

@@ -3,7 +3,11 @@ using Godot;
 public partial class VelocityComponent : Component
 {
     public Vector3 Velocity;
-    public float Speed = 2;
+
+    public int maxX = 10;
+    public int maxZ = 10;
+
+    public float jumpSpeed = 5f;
 
     public VelocityComponent()
     {

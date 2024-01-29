@@ -2,7 +2,7 @@ using Godot;
 
 public partial class CameraComponent : Component
 {
-    Camera3D camera3D;
+    public Camera3D camera3D;
 
     public CameraComponent()
     {

@@ -2,8 +2,11 @@ using Godot;
 
 public partial class TransformComponent : Component
 {
+    [Export]
     public Vector3 TransformPosition;
+    [Export]
     public Vector3 TransformRotation;
+    [Export]
     public Vector3 TransformScale;
 
     public TransformComponent()

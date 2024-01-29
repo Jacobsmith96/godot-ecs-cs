@@ -1,6 +1,6 @@
 using Godot;
 
-public partial class Component : Node3D
+public partial class Component : Node
 {
     public Entity Entity;
 }

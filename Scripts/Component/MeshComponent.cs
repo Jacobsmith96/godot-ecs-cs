@@ -1,17 +1,27 @@
 using Godot;
 
+using Scripts.Enum;
+
 public partial class MeshComponent : Component
 {
-    MeshInstance3D meshInstance3D;
+    public MeshInstance3D meshInstance3D;
 
-    public MeshComponent(Color color)
+    public MeshComponent(Color color, MeshTypes meshType)
     {
-        MeshInstance3D mesh = new MeshInstance3D();
-        mesh.Mesh = new CapsuleMesh();
-        mesh.Name = "MeshInstance3D";
+        meshInstance3D = new MeshInstance3D();
+        switch (meshType)
+        {
+            case MeshTypes.PLAYER:
+                meshInstance3D.Mesh = new CapsuleMesh();
+                break;
+            case MeshTypes.PLATFORM:
+                meshInstance3D.Mesh = new BoxMesh();
+                break;
+        }
+        meshInstance3D.Name = "MeshInstance3D";
         StandardMaterial3D material = new StandardMaterial3D();
         material.AlbedoColor = color;
-        mesh.MaterialOverride = material;
-        AddChild(mesh);
+        meshInstance3D.MaterialOverride = material;
+        AddChild(meshInstance3D);
     }
 }
